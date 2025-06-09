@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antivirus Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt="" width="200px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class = "active" href="Service.html">Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa fa-outdent"></i>
+        </div>
+    </section>
+
+    <header>
+        <h1 class="title">AntiVirus</span></h1>
+    </header>
+    <main>
+        <div class="tabs">
+            <div class="tab active" onclick="toggleTab('tab1')">Features</div>
+            <div class="tab" onclick="toggleTab('tab2')">Compatibility</div>
+            <div class="tab" onclick="toggleTab('tab3')">Pricing</div>
+        </div>
+        <div id="tab1" class="tab-content active">
+            <h2>Features</h2>
+            <ul>
+                <li>Scan your devices for viruses and malware</li>
+                <li>Block suspicious websites and downloads</li>
+                <li>Schedule regular automatic scans</li>
+                <li>Get real-time protection against new threats</li>
+            </ul>
+        </div>
+        <div id="tab2" class="tab-content">
+            <h2>Compatibility</h2>
+            <p>Our software is compatible with Windows, Mac, and mobile devices.</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <h2>Pricing</h2>
+            <p>Contact us for pricing details.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion('accordion1')">FAQs</div>
+            <div id="accordion1" class="accordion-content">
+                <h2>FAQs</h2>
+                <h3>Q: Is there a free trial available?</h3>
+                <p>A: Yes, we offer a free trial for our antivirus software.</p>
+                <h3>Q: How can I contact support?</h3>
+                <p>A: You can contact our support team through email or phone.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="section-p2">
+        <div class="col">
+            <img class="logo" src="logo.png" alt="" width="200px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 826 Don Soriano Ave. Balayhangin Calauan Laguna, Calauan, Philippines</p>
+            <p><strong>Phone:</strong> 0945 973 1833</p>
+            <p><strong>Hours:</strong> Monday to Saturday 9:00 am to 6:00 pm</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a> I
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Payments</h4>
+            <p>Secured Payment Gateways </p>
+            <img src="images/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-text">© 2024, Nivek PC Repairs</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(function (tabContent) {
+                tabContent.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(function (tab) {
+                tab.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabId).classList.add('active');
+
+            // Add active class to the clicked tab
+            document.querySelector('[onclick="toggleTab(\'' + tabId + '\')"]').classList.add('active');
+        }
+
+        function toggleAccordion(accordionId) {
+            var accordionContent = document.getElementById(accordionId);
+            accordionContent.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

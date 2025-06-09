@@ -1,0 +1,267 @@
+a,p,h1,h2,h3,h4,ul {
+	margin: 0;
+	padding: 0;
+}
+
+.title{
+
+	font-size: 40px;
+}
+.section-services {
+	padding-top: 110px;
+	padding-bottom: 120px;
+	font-family: "Poppins", sans-serif;
+	background-color: #211f24;
+	color: #fff;
+}
+
+.section-services .header-section {
+	margin-bottom: 35px;
+}
+
+.section-services .header-section .title {
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 140px;
+	height: 1px;
+	background-color: #f70037;
+}
+
+.section-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 45px;
+	height: 3px;
+	background-color: #f70037;
+}
+
+.section-services .header-section .title span {
+	color: #f70037;
+}
+
+.section-services .header-section .description {
+	color: #6f6f71;
+}
+
+.section-services .single-service {
+	margin-top: 40px;
+	background-color: #24252a;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+
+.section-services .single-service .part-1 {
+	padding: 40px 40px 25px;
+	border-bottom: 2px solid #1d1e23;
+}
+
+.section-services .single-service .part-1 i {
+	margin-bottom: 25px;
+	font-size: 50px;
+	color: #f70037;
+}
+
+.section-services .single-service .part-1 .title {
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 {
+	padding: 30px 40px 40px;
+}
+
+.section-services .single-service .part-2 .description {
+	margin-bottom: 22px;
+	color: #6f6f71;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.section-services .single-service .part-2 a i {
+	margin-right: 10px;
+	color: #f70037;
+}
+
+.btn-primary {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+
+/* Virus */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #211f24;
+	color: gray;
+}
+
+header {
+	background-color: #211f24;
+	color: white;
+	padding: 2rem 0;
+	text-align: center;
+	border-bottom: 6px solid #211f24;
+}
+
+main {
+	padding: 2rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	color: #f70037;
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	color: hsl(0, 0%, 90%);
+}
+
+ul {
+	margin-top: 1.5rem;
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	color: #f0f2fc;
+}
+
+a {
+	color: #4CAF50;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Tabs Styles */
+.tabs {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.tab {
+	background-color: #212327;
+	padding: 1rem 2rem;
+	margin-right: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.tab:last-child {
+	margin-right: 0;
+}
+
+.tab:hover {
+	background-color: #e0e0e0;
+}
+
+.tab-content.active {
+display: block;
+}
+.tab-content {
+display: none;
+padding: 1rem;
+border: 1px solid #ccc;
+background-color: hsl(232deg 16% 15%); /* Adjust this color to blend better */
+box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04); /* Added box shadow */
+box-sizing: border-box; /* Added box sizing */
+}
+
+.tab-content.active {
+	display: block;
+}
+
+/* Accordion Styles */
+.accordion {
+	border: 1px solid #ccc;
+	margin-bottom: 1rem;
+}
+
+.accordion-header {
+	background-color: #f0f0f0;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+	background-color: #e0e0e0;
+}
+
+.accordion-header.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.accordion-content {
+	display: none;
+	padding: 1rem;
+	border-top: 1px solid #ccc;
+	background-color: hsl(210, 50%, 25%);
+}
+
+.accordion-content.active {
+	display: block;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+	header {
+		padding: 1rem 0;
+	}
+	main {
+		padding: 1rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.1rem;
+	}
+	li {
+		font-size: 1.1rem;
+	}
+	footer {
+		padding: 1rem 0;
+	}
+	.tabs {
+		flex-wrap: wrap;
+	}
+	.tab {
+		margin: 0.5rem 0;
+	}
+	.tab:last-child {
+		margin-right: 1rem;
+	}
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Repair</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
+
+    <!-- Add Google Fonts for Montserrat and Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Add Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#555;
+  margin:0;
+}
+
+a {
+  color:#666;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+a:hover {
+  color:#BB2C54;
+}
+
+
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+hr {
+  background: #fff;
+  height: 2px;
+  border: 0;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#fff), to(#fff), color-stop(50%, #e6e6e6));
+  background-image: -webkit-linear-gradient(left, #fff, #e6e6e6, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #e6e6e6, #fff);
+  background-image: -ms-linear-gradient(left, #fff, #e6e6e6, #fff);
+  background-image: -o-linear-gradient(left, #fff, #e6e6e6, #fff);
+  clear: both;
+}
+
+hr:after {
+  content: '';
+  background: #ccc;
+  display: block;
+  height: 1px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#e6e6e6), to(#e6e6e6), color-stop(50%, #ccc));
+  background-image: -webkit-linear-gradient(left, #e6e6e6, #ccc, #e6e6e6);
+  background-image: -moz-linear-gradient(left, #e6e6e6, #ccc, #e6e6e6);
+  background-image: -ms-linear-gradient(left, #e6e6e6, #ccc, #e6e6e6);
+  background-image: -o-linear-gradient(left, #e6e6e6, #ccc, #e6e6e6);
+}
+
+#contenuto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* To ensure the columns wrap properly */
+    margin: 10px;
+}
+
+#contenuto:hover {
+    transform: translateY(-5px); /* Add translateY transformation on hover */
+}
+
+#contenuto .col {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    margin: 0 10px; /* Adjust the margin as needed */
+    text-align: center;
+    border: 2px solid #ccc; /* Add border to each column */
+    padding: 10px; /* Add padding */
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .col {
+        float: none;
+        border-bottom: 1px solid #ccc;
+        width: 93.75%; /* 300px / 320px */
+        margin-right: 3.125%; /* 10px / 320px */
+        margin-left: 3.125%; /* 10px / 320px */
+    }
+    
+    .col:last-child {
+        float: none;
+        border-bottom: none;
+    }
+    
+    #logo {
+        text-align: center;
+    }
+    
+    header, #contenuto, footer  {
+        width: 93.75%; /* 300px / 320px */
+        margin-right: 3.125%; /* 10px / 320px */
+        margin-left: 3.125%; /* 10px / 320px */  
+    }
+    
+    #immagine {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #immagine img {
+        width: auto;
+        max-width: none;
+        height: 300px;
+    }
+
+    }
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+    #logo {
+        background: url(http://ciroesposito.com/rwd/rwd-retina.png) no-repeat left top;
+        background-size: 160px 64px;
+        text-indent: -999em;
+        margin-bottom: 10px;
+    }
+}
+
+         </style>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt="" width="200px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class = "active" href="Service.html">Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <div class="center-items">
+        <img src="nn.png">
+      </div>
+      </section>
+      <div class="row">
+      <section id="contenuto">
+        <div class="col">
+          <h1>Expert Repairs </h1>
+          <p>Trust your laptop with our team of skilled technicians for quick and reliable repairs. From hardware issues to software glitches, we've got you covered.</p>
+        </div>
+    
+        <div class="col">
+          <h1>Thorough Cleaning </h1>
+          <p>Give your laptop a fresh start with our professional cleaning service. We'll remove dust, dirt, and grime to improve performance and extend its lifespan.</p>
+        </div>
+    
+        <div class="col">
+          <h1> Upgrades </h1>
+          <p>Boost your laptop's performance with our upgrade solutions. Whether it's upgrading RAM, SSD, or installing the latest software, we'll tailor solutions to meet your needs.</p>
+        </div>
+    </section>
+
+
+
+    <footer class="section-p2">
+        <div class="col">
+            <img class="logo" src="logo.png" alt="" width="200px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 826 Don Soriano Ave. Balayhangin Calauan Laguna, Calauan, Philippines</p>
+            <p><strong>Phone:</strong> 0945 973 1833</p>
+            <p><strong>Hours:</strong> Monday to Saturday 9:00 am to 6:00 pm</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a> I
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Payments</h4>
+            <p>Secured Payment Gateways </p>
+            <img src="images/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-text">© 2024, Nivek PC Repairs</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
